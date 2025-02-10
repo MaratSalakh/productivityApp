@@ -103,14 +103,13 @@ function timeFormatter(seconds: number) {
 </script>
 
 <template>
-  <h1 class="m-4">Task Tracker</h1>
   <div class="m-8"><Button @click="addTask">Add task</Button></div>
   <div class="m-8 flex flex-row justify-start align-middle flex-wrap">
     <Card
       v-for="task in tasks"
       :key="task.id"
       :class="changingCheck(task.changing)"
-      class="w-[330px] pt-6 mr-4 mb-4 transition-opacity duration-100 ease-in"
+      class="w-[320px] pt-6 m-2 transition-opacity duration-100 ease-in"
     >
       <CardContent>
         <form>
